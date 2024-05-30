@@ -1,5 +1,6 @@
 # UtahDRN dvmhost Installation
 
+```
 apt update
 apt upgrade
 
@@ -22,3 +23,4 @@ curl -o /etc/systemd/system/multi-user.target.wants/dvmhost-vc.service https://r
 systemctl daemon-reload
 systemctl enable dvmhost-cc
 systemctl enable dvmhost-vc
+```
