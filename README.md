@@ -33,4 +33,9 @@ systemctl enable dvmhost-vc
 ```
 rm -rf cd /opt/dvmhost-master/build
 ```
-###
+
+## Useful Links
+https://github.com/DVMProject/iden-channel-calculator
+https://dvmproject.io/iden-calc-web/
+Downlink = Repeater TX / Portable RX
+Uplink = Repeater RX / Portable TX
