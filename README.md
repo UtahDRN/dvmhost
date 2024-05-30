@@ -22,8 +22,8 @@ cp /opt/dvmhost-master/build/dvmhost /etc/dvmhost/bin/
 ```
 ### Create Service
 ```
-curl -o /lib/systemd/system/dvmhost-cc.service https://raw.githubusercontent.com/UtahDRN/dvmhost/main/etc/systemd/system/multi-user.target.wants/dvmhost-cc.service
-curl -o /lib/systemd/system/dvmhost-vc.service https://raw.githubusercontent.com/UtahDRN/dvmhost/main/etc/systemd/system/multi-user.target.wants/dvmhost-vc.service
+curl -o /lib/systemd/system/dvmhost-cc.service https://raw.githubusercontent.com/UtahDRN/dvmhost/main/lib/systemd/system/dvmhost-cc.service
+curl -o /lib/systemd/system/dvmhost-vc.service https://raw.githubusercontent.com/UtahDRN/dvmhost/main/lib/systemd/system/dvmhost-vc.service
 
 systemctl daemon-reload
 systemctl enable dvmhost-cc
