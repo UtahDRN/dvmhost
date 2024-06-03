@@ -50,6 +50,12 @@ curl -o /etc/dvmhost/configs/utahdrn-cc1.yml https://raw.githubusercontent.com/U
 curl -o /etc/dvmhost/configs/utahdrn-vc1.yml https://raw.githubusercontent.com/UtahDRN/dvmhost/main/etc/dvmhost/configs/utahdrn-vc1.yml
 ```
 
+### Start Service
+```
+systemctl start dvmhost-cc
+systemctl start dvmhost-vc
+```
+
 ## Useful Links
 https://github.com/DVMProject/iden-channel-calculator
 
