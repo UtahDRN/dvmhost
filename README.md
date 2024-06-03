@@ -5,7 +5,7 @@
 apt update
 apt upgrade
 
-apt install vim wget make cmake build-essentials libasio-dev libncurses-dev libssl-dev
+apt install vim wget curl make cmake build-essentials libasio-dev libncurses-dev libssl-dev
 ```
 
 ### Build and Install dvmhost
