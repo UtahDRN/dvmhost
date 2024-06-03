@@ -386,13 +386,13 @@ system:
               # Channel Number (used to calculate actual host frequency based on the identity table).
               channelNo: C08
               # REST API IP Address for voice channel.
-              restAddress: 
+#              restAddress: 127.0.0.1
               # REST API Port number for voice channel.
-              restPort: 0
+#              restPort: 9991
               # REST API access password for voice channel.
-              restPassword: "PASSWORD"
+#              restPassword: "PASSWORD"
               # Flag indicating whether or not REST API is operating in SSL mode.
-              restSsl: false
+#              restSsl: false
 
         secure:
             # AES-128 16-byte Key (used for LLA)
