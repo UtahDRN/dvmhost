@@ -594,7 +594,7 @@ system:
     #
     talkgroup_id:
         # Full path to the talkgroup rules file.
-        file: /etc/dvmhost/configs/talkgroup_acl.yml
+        file: /etc/dvmhost/configs/talkgroup_rules.yml
         # Amount of time between updates of talkgroup rules file. (minutes)
         time: 30
         # Flag indicating whether or not TGID ACLs are enforced.
