@@ -1,0 +1,113 @@
+groupVoice:
+  - config:
+      active: true
+      affiliated: false
+      parrot: false
+    name: SUPERGROUP
+    source:
+      slot: 1
+      tgid: 65534
+  - config:
+      active: true
+      affiliated: false
+      parrot: false
+    name: ANNOUNCE
+    source:
+      slot: 1
+      tgid: 65534
+  - config:
+      active: true
+      affiliated: false
+      parrot: false
+    name: PARROT
+    source:
+      slot: 1
+      tgid: 9990
+  - config:
+      active: true
+      affiliated: true
+      parrot: false
+    name:
+    source:
+      slot: 1
+      tgid: 500
+  - config:
+      active: true
+      affiliated: false
+      parrot: false
+    name:
+    source:
+      slot: 1
+      tgid: 501
+  - config:
+      active: true
+      affiliated: false
+      parrot: false
+    name:
+    source:
+      slot: 1
+      tgid: 502
+  - config:
+      active: true
+      affiliated: false
+      parrot: false
+    name:
+    source:
+      slot: 1
+      tgid: 503
+  - config:
+      active: true
+      affiliated: false
+      parrot: false
+    name:
+    source:
+      slot: 1
+      tgid: 504
+  - config:
+      active: true
+      affiliated: false
+      parrot: false
+    name:
+    source:
+      slot: 1
+      tgid: 505
+  - config:
+      active: true
+      affiliated: false
+      parrot: false
+    name:
+    source:
+      slot: 1
+      tgid: 506
+  - config:
+      active: true
+      affiliated: false
+      parrot: false
+    name:
+    source:
+      slot: 1
+      tgid: 507
+  - config:
+      active: true
+      affiliated: false
+      parrot: false
+    name:
+    source:
+      slot: 1
+      tgid: 508
+  - config:
+      active: true
+      affiliated: false
+      parrot: false
+    name:
+    source:
+      slot: 1
+      tgid: 509
+  - config:
+      active: true
+      affiliated: false
+      parrot: false
+    name:
+    source:
+      slot: 1
+      tgid: 510
