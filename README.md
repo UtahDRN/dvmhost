@@ -42,6 +42,14 @@ rm -rf cd /opt/dvmhost-master/build
 stm32flash -v -w dvm-firmware-hs_f1.bin -g 0x0 -R /dev/ttyUSB0
 ```
 
+### Download Configs
+```
+curl -o /etc/dvmhost/configs/iden_table.dat https://raw.githubusercontent.com/UtahDRN/dvmhost/main/etc/dvmhost/configs/iden_table.dat
+curl -o /etc/dvmhost/configs/talkgroup_rules.yml https://raw.githubusercontent.com/UtahDRN/dvmhost/main/etc/dvmhost/configs/talkgroup_rules.yml
+curl -o /etc/dvmhost/configs/utahdrn-cc1.yml https://raw.githubusercontent.com/UtahDRN/dvmhost/main/etc/dvmhost/configs/utahdrn-cc1.yml
+curl -o /etc/dvmhost/configs/utahdrn-vc1.yml https://raw.githubusercontent.com/UtahDRN/dvmhost/main/etc/dvmhost/configs/utahdrn-vc1.yml
+```
+
 ## Useful Links
 https://github.com/DVMProject/iden-channel-calculator
 
