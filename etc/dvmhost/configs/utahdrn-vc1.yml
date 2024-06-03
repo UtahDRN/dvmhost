@@ -28,7 +28,7 @@ log:
     # Full path for the directory to store the activity log files.
     activityFilePath: /var/log/dvmhost
     # Log filename prefix.
-    fileRoot: DVM-CC1
+    fileRoot: DVM-VC1
 
 #
 # Network Configuration
@@ -78,7 +78,7 @@ network:
     # IP address of the network interface to listen for REST API on (or 0.0.0.0 for all).
     restAddress: 127.0.0.1
     # Port number for REST API to listen on.
-    restPort: 9990
+    restPort: 9991
     # Flag indicating whether or not REST API is operating in SSL mode.
     restSsl: false
     # HTTPS/TLS certificate.
@@ -449,7 +449,7 @@ system:
 
             uart:
                 # UART/RS232 serial port device.
-                port: /dev/ttyUSB0
+                port: /dev/ttyUSB1
                 # UART/RS232 serial port speed. (The default speed of 115200, should not be
                 # changed unless the speed is also changed in the firmware of the modem.)
                 speed: 115200
