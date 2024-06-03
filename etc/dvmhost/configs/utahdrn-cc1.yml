@@ -172,7 +172,7 @@ protocols:
         #
         control:
             # Flag indicating whether or not TSBK data support is enabled.
-            enable: false
+            enable: true
             # Flag indicating whether or not TSBK requets will optionally acknowledge incoming requests.
             ackRequests: true
             # Flag indicating whether or not this CC is a dedicated CC.
