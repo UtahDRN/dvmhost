@@ -1,0 +1,12 @@
+[Unit]
+Description=dvmhost fne core service
+After=syslog.target network.target
+
+[Service]
+User=root
+Type=forking
+ExecStart=/etc/dvmhost/dvmfne -c /etc/dvmhost/configs/fne-config.yml
+Restart=on-abnormal
+
+[Install]
+WantedBy=multi-user.target
