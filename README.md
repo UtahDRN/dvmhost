@@ -17,9 +17,9 @@ cd /opt/dvmhost-master/build
 cmake ..
 make
 
-mkdir -p /etc/dvmhost/bin /etc/dvmhost/configs /var/log/dvmhost
+mkdir -p /etc/dvmhost/configs /var/log/dvmhost
 
-cp /opt/dvmhost-master/build/dvmhost /etc/dvmhost/bin/
+cp /opt/dvmhost-master/build/dvmhost /etc/dvmhost/
 ```
 
 ### Create Service
