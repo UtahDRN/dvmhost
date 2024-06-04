@@ -196,7 +196,7 @@ protocols:
 
         # Flag indicating whether or not to ignore voice frames on a control channel
         #   This comes in handy if you're running non-dedicated with an FNE so the CC doesn't repeat voice traffic.
-        controlOnly: true
+        controlOnly: false
         # Flag indicating whether or not a voice HDU will transmitted at the start of a call from the network.
         disableNetworkHDU: false
         # Flag indicating whether or not network calls will generate a channel grant.
@@ -306,7 +306,7 @@ system:
     # (instead of split frequency).
     simplexSameFrequency: false
     # Amount of time the host will "hang" on a digital mode in multi-mode operation. (seconds)
-    modeHang: 10
+    modeHang: 1
     # Amount of time the host will "hang" on a RF received digital mode in multi-mode operation. (seconds)
 #    rfModeHang: 10
     # Amount of time the host will "hang" on a network received digital mode in multi-mode operation. (seconds)
@@ -384,7 +384,7 @@ system:
               # Channel Identity (corresponds to the appropriate entry in the iden_table file).
             - channelId: 4
               # Channel Number (used to calculate actual host frequency based on the identity table).
-              channelNo: C08
+              channelNo: c08
               # REST API IP Address for voice channel.
               restAddress: 127.0.0.1
               # REST API Port number for voice channel.
@@ -465,7 +465,7 @@ system:
         # Flag indicating whether or not the modem COS signal should lockout transmit.
         cosLockout: false
         # Number of FDMA preambles to transmit before data.
-        fdmaPreamble: 80
+        fdmaPreamble: 170
         # Amount of time to wait before starting DMR transmissions after a signal is received.
         dmrRxDelay: 7
         # Amount of packet correlations that should occur before P25 data is returned from the modem to the host.
@@ -548,13 +548,13 @@ system:
         # Sets the transmitted signal modulation level.
         txLevel: 50
         # Sets the transmitted CWID signal modulation level.
-#        cwIdTxLevel: 50
+        cwIdTxLevel: 50
         # Sets the transmitted DMR signal modulation level.
-#        dmrTxLevel: 50
+        dmrTxLevel: 50
         # Sets the transmitted P25 signal modulation level.
-#        p25TxLevel: 50
+        p25TxLevel: 50
         # Sets the transmitted NXDN signal modulation level.
-#        nxdnTxLevel: 50
+        nxdnTxLevel: 50
         rssiMappingFile: RSSI.dat
         # Deprecated. Sets the playout time in seconds between sending buffered data to the modem.
         packetPlayoutTime: 10
