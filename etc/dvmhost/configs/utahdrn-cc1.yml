@@ -186,7 +186,7 @@ protocols:
             # Flag to disable TSDU triple-block transmissions and instead transmit single-block TSDUs.
             disableTSDUMBF: false
             # Flag to enable optional TIME_DATE_ANNC TSBK during a CC broadcast.
-            enableTimeDateAnn: false
+            enableTimeDateAnn: true
             # Flag indicating whether or not the source ID validation before granting disabled.
             disableGrantSourceIdCheck: false
             # Flag indicating immediate TSDUs will be sent twice.
@@ -243,7 +243,8 @@ protocols:
         # Maximum number of lost frames before terminating a call.
         frameLossThreshold: 6
         # Internal data queue size (in P25 packets).
-        queueSize: 12
+        # queueSize: 12
+        queueSize: 15
         # Flag indicating whether or not verbose logging is enabled.
         verbose: true
         # Flag indicating whether or not debug logging is enabled.
@@ -306,7 +307,7 @@ system:
     # (instead of split frequency).
     simplexSameFrequency: false
     # Amount of time the host will "hang" on a digital mode in multi-mode operation. (seconds)
-    modeHang: 1
+    modeHang: 10
     # Amount of time the host will "hang" on a RF received digital mode in multi-mode operation. (seconds)
 #    rfModeHang: 10
     # Amount of time the host will "hang" on a network received digital mode in multi-mode operation. (seconds)
@@ -474,7 +475,8 @@ system:
         # Size (in bytes) of the DMR transmit FIFO buffer.
         dmrFifoLength: 505
         # Size (in bytes) of the P25 transmit FIFO buffer.
-        p25FifoLength: 522
+        # p25FifoLength: 522
+        p25FifoLength: 442
         # Size (in bytes) of the NXDN transmit FIFO buffer.
         nxdnFifoLength: 538
 
@@ -548,16 +550,16 @@ system:
         # Sets the transmitted signal modulation level.
         txLevel: 50
         # Sets the transmitted CWID signal modulation level.
-        cwIdTxLevel: 50
+#        cwIdTxLevel: 50
         # Sets the transmitted DMR signal modulation level.
-        dmrTxLevel: 50
+#        dmrTxLevel: 50
         # Sets the transmitted P25 signal modulation level.
-        p25TxLevel: 50
+#        p25TxLevel: 50
         # Sets the transmitted NXDN signal modulation level.
-        nxdnTxLevel: 50
+#        nxdnTxLevel: 50
         rssiMappingFile: RSSI.dat
         # Deprecated. Sets the playout time in seconds between sending buffered data to the modem.
-        packetPlayoutTime: 10
+#        packetPlayoutTime: 10
         # Flag indicating that modem resets due to ADC or DAC overflows is disabled.
         disableOFlowReset: false
         # Flag indicating that the modem configuration area data should be ignored.
