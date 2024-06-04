@@ -364,9 +364,9 @@ system:
         #
         controlCh:
             # REST API IP Address for control channel. (If blank, notifications are disabled.)
-            restAddress: 127.0.0.1
+            restAddress: 
             # REST API Port number for control channel. (If 0, notifications are disabled.)
-            restPort: 9990
+            restPort: 0
             # REST API access password for control channel.
             restPassword: "PASSWORD"
             # Flag indicating whether or not REST API is operating in SSL mode.
@@ -386,13 +386,13 @@ system:
               # Channel Number (used to calculate actual host frequency based on the identity table).
               channelNo: C08
               # REST API IP Address for voice channel.
-#              restAddress: 127.0.0.1
+              restAddress: 127.0.0.1
               # REST API Port number for voice channel.
-#              restPort: 9991
+              restPort: 9991
               # REST API access password for voice channel.
-#              restPassword: "PASSWORD"
+              restPassword: "PASSWORD"
               # Flag indicating whether or not REST API is operating in SSL mode.
-#              restSsl: false
+              restSsl: false
 
         secure:
             # AES-128 16-byte Key (used for LLA)
