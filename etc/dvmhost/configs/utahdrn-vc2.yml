@@ -1,0 +1,246 @@
+#
+# UtahDRN DVMHost Configuration for Voice Channel
+# 
+# Updated: 06 Jun 2024 (chris@utahdrn.org)
+#
+
+# Flag indicating whether the host will run as a background or foreground task.
+daemon: true
+
+#
+# Logging Configuration
+#
+#   Logging Levels:
+#     1 - Debug
+#     2 - Message
+#     3 - Informational
+#     4 - Warning
+#     5 - Error
+#     6 - Fatal
+#
+log:
+  displayLevel: 1
+  fileLevel: 1
+  filePath: /var/log/dvmhost
+  activityFilePath: /var/log/dvmhost
+  fileRoot: DVM-VC1
+network:
+  enable: true
+  id: 100002
+  address: 129.123.59.69
+  port: 62031
+  password: PASSWORD
+  encrypted: false
+  presharedKey: 000102030405060708090A0B0C0D0E0F000102030405060708090A0B0C0D0E0F
+  jitter: 360
+  slot1: true
+  slot2: true
+  updateLookups: false
+  allowActivityTransfer: true
+  allowDiagnosticTransfer: true
+  debug: false
+  restEnable: true
+  restAddress: 127.0.0.1
+  restPort: 9991
+  restPassword: butVRmGsyVaSVns11JpSvLbP0OXJ7mBk
+  restDebug: false
+protocols:
+  dmr:
+    enable: false
+    beacons:
+      enable: false
+      interval: 60
+      duration: 3
+    control:
+      dedicated: false
+      enable: false
+      slot: 1
+      disableGrantSourceIdCheck: false
+    embeddedLCOnly: false
+    dumpTAData: true
+    dumpDataPacket: false
+    repeatDataPacket: true
+    dumpCsbkData: false
+    verifyReg: false
+    nRandWait: 8
+    backOff: 1
+    callHang: 5
+    txHang: 8
+    silenceThreshold: 21
+    frameLossThreshold: 2
+    queueSize: 31
+    verbose: true
+    debug: false
+  p25:
+    enable: true
+    tduPreambleCount: 6
+    control:
+      enable: false
+      ackRequests: true
+      dedicated: false
+      broadcast: false
+      interval: 300
+      duration: 1
+      disableTSDUMBF: false
+      enableTimeDateAnn: true
+      disableGrantSourceIdCheck: false
+      redundantImmediate: true
+      redundantGrantTransmit: false
+    controlOnly: false
+    disableNetworkHDU: false
+    disableNetworkGrant: false
+    inhibitUnauthorized: false
+    legacyGroupGrnt: true
+    legacyGroupReg: false
+    convNetGrantDemand: false
+    verifyAff: false
+    verifyReg: false
+    requireLLAForReg: false
+    dumpDataPacket: false
+    repeatDataPacket: true
+    dumpTsbkData: false
+    callHang: 5
+    noStatusAck: false
+    noMessageAck: true
+    unitToUnitAvailCheck: true
+    allowExplicitSourceId: true
+    sndcpGrant: false
+    silenceThreshold: 124
+    frameLossThreshold: 6
+    queueSize: 15
+    verbose: true
+    debug: false
+  nxdn:
+    enable: false
+    control:
+      enable: false
+      dedicated: false
+      broadcast: true
+      interval: 300
+      duration: 1
+      disableGrantSourceIdCheck: false
+    verifyAff: false
+    verifyReg: false
+    dumpRcchData: false
+    callHang: 5
+    silenceThreshold: 14
+    frameLossThreshold: 4
+    queueSize: 31
+    verbose: true
+    debug: false
+system:
+  identity: 65-VC1
+  timeout: 180
+  duplex: true
+  simplexSameFrequency: false
+  modeHang: 1
+  fixedMode: true
+  rfTalkgroupHang: 10
+  activeTickDelay: 5
+  idleTickDelay: 5
+  localTimeOffset: -6
+  info:
+    latitude: 40.0966
+    longitude: -111.5707
+    height: 1
+    power: 10
+    location: 'Utah, United States'
+  config:
+    authoritative: false
+    supervisor: false
+    channelId: 4
+    channelNo: C70
+    controlCh:
+      restAddress: null
+      restPort: 0
+      restPassword: PASSWORD
+      notifyEnable: true
+    voiceChNo:
+      - channelId: 4
+        channelNo: C70
+        restAddress: 127.0.0.1
+        restPort: 9991
+        restPassword: butVRmGsyVaSVns11JpSvLbP0OXJ7mBk
+    secure:
+      key: 000102030405060708090A0B0C0D0E0F
+    colorCode: 1
+    nac: C4D
+    ran: 1
+    pSuperGroup: 911
+    announcementGroup: 32
+    dmrNetId: 111
+    netId: 32350
+    sysId: C4D
+    rfssId: 1
+    siteId: 64
+  cwId:
+    enable: true
+    time: 15
+    callsign: KC7WSU
+  modem:
+    protocol:
+      type: uart
+      uart:
+        port: /dev/ttyUSB1
+        speed: 115200
+    rxInvert: false
+    txInvert: false
+    pttInvert: false
+    dcBlocker: true
+    cosLockout: false
+    fdmaPreamble: 170
+    dmrRxDelay: 7
+    p25CorrCount: 8
+    dmrFifoLength: 505
+    p25FifoLength: 442
+    nxdnFifoLength: 538
+    hotspot:
+      dmrDiscBWAdj: 0
+      dmrPostBWAdj: 0
+      p25DiscBWAdj: 0
+      p25PostBWAdj: 0
+      nxdnDiscBWAdj: 0
+      nxdnPostBWAdj: 0
+      adfGainMode: 0
+      afcEnable: true
+      afcKI: 11
+      afcKP: 4
+      afcRange: 1
+      txTuning: 0
+      rxTuning: 0
+    repeater:
+      dmrSymLvl3Adj: 0
+      dmrSymLvl1Adj: 0
+      p25SymLvl3Adj: 0
+      p25SymLvl1Adj: 0
+      nxdnSymLvl3Adj: 0
+      nxdnSymLvl1Adj: 0
+    softpot:
+      rxCoarse: 127
+      rxFine: 127
+      txCoarse: 127
+      txFine: 127
+      rssiCoarse: 127
+      rssiFine: 127
+    rxDCOffset: 0
+    txDCOffset: 0
+    rxLevel: 50
+    txLevel: 50
+    rssiMappingFile: RSSI.dat
+    packetPlayoutTime: 10
+    disableOFlowReset: false
+    ignoreModemConfigArea: false
+    dumpModemStatus: false
+    trace: false
+    debug: false
+  iden_table:
+    file: /etc/dvmhost/configs/iden_table.dat
+    time: 30
+  radio_id:
+    file: /etc/dvmhost/configs/rid_acl.dat
+    time: 30
+    acl: false
+  talkgroup_id:
+    file: /etc/dvmhost/configs/talkgroup_rules.yml
+    time: 30
+    acl: false
