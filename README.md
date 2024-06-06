@@ -45,8 +45,8 @@ stm32flash -v -w dvm-firmware-hs_f1.bin -g 0x0 -R /dev/ttyUSB0
 
 From Pi
 
-First you will need to disable the serial console and disable bluetooth. Edit ```/boot/cmdline.txt``` and remove the line ```console=serial0, 115200```.
-Next, you will need to disable bluetooth on the board. Edit ```/boot/config.txt``` and add a line containing ```dtoverlay=disable-bt```. Reboot.
+First you will need to disable the serial console and disable bluetooth. Edit ```/boot/firmware/cmdline.txt``` and remove the line ```console=serial0, 115200```.
+Next, you will need to disable bluetooth on the board. Edit ```/boot/firmware/config.txt``` and add a line containing ```dtoverlay=disable-bt``` after the [All] section at the bottom. Reboot.
 
 > Most sets of instructions reccomend to download stm32flash from online, however we have found the prepackaged version to work fine.
 
