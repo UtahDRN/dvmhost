@@ -26,7 +26,7 @@ log:
   fileRoot: DVM-VC1
 network:
   enable: true
-  id: 100002
+  id: 101002
   address: 129.123.59.69
   port: 62031
   password: PASSWORD
