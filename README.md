@@ -11,8 +11,8 @@ reboot
 
 ### Pi Firmware Update
 ```
-sudo rpi-update
-sudo reboot
+rpi-update
+reboot
 ```
 
 ### Build and Install dvmhost
