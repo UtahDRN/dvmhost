@@ -58,7 +58,9 @@ Next, you will need to disable bluetooth on the board. Edit ```/boot/config.txt`
 
 Once the hotspot is back on, navigate to the build folder where you compiled the firmware. Put a jumper across the J1 points on the board, and the RED heartbeat LED should stop flashing. Run the below command to flash.
 
-```stm32flash -v -w dvm-firmware-hs_f1.bin -i 20,-21,21,-20 -R /dev/ttyAMA0```
+```
+stm32flash -v -w dvm-firmware-hs_f1.bin -i 20,-21,21,-20 -R /dev/ttyAMA0
+```
 
 ### Download Configs
 ```
