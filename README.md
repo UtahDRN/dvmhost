@@ -1,11 +1,5 @@
 # UtahDRN dvmhost Installation
 
-### If Attached to RasPi
-```
-
-```
-
-
 ### Base System Changes
 ```
 apt update
