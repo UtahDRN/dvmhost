@@ -5,7 +5,7 @@
 apt update
 apt upgrade
 
-apt install vim wget curl make cmake build-essential libasio-dev libncurses-dev libssl-dev
+apt install vim wget curl git make cmake build-essential libasio-dev libncurses-dev libssl-dev
 reboot
 ```
 
