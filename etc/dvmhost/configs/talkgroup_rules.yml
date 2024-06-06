@@ -111,3 +111,91 @@ groupVoice:
     source:
       slot: 1
       tgid: 510
+  - config:
+      active: true
+      affiliated: false
+      parrot: false
+    name:
+    source:
+      slot: 1
+      tgid: 3149
+  - config:
+      active: true
+      affiliated: false
+      parrot: false
+    name:
+    source:
+      slot: 1
+      tgid: 31490
+  - config:
+      active: true
+      affiliated: false
+      parrot: false
+    name:
+    source:
+      slot: 1
+      tgid: 31491
+  - config:
+      active: true
+      affiliated: false
+      parrot: false
+    name:
+    source:
+      slot: 1
+      tgid: 31492
+  - config:
+      active: true
+      affiliated: false
+      parrot: false
+    name:
+    source:
+      slot: 1
+      tgid: 31493
+  - config:
+      active: true
+      affiliated: false
+      parrot: false
+    name:
+    source:
+      slot: 1
+      tgid: 31494
+  - config:
+      active: true
+      affiliated: false
+      parrot: false
+    name:
+    source:
+      slot: 1
+      tgid: 31495
+  - config:
+      active: true
+      affiliated: false
+      parrot: false
+    name:
+    source:
+      slot: 1
+      tgid: 31496
+  - config:
+      active: true
+      affiliated: false
+      parrot: false
+    name:
+    source:
+      slot: 1
+      tgid: 31497
+  - config:
+      active: true
+      affiliated: false
+      parrot: false
+    name:
+    source:
+      slot: 1
+      tgid: 31498
+  - config:
+      active: true
+      affiliated: false
+      parrot: false
+    name:
+    source:
+      slot: 1
+      tgid: 31499
