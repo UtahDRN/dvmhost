@@ -2,6 +2,7 @@
 
 ### Base System Changes
 ```
+sudo rpi-update
 apt update
 apt upgrade
 
