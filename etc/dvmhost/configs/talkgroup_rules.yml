@@ -199,3 +199,11 @@ groupVoice:
     source:
       slot: 1
       tgid: 31499
+  - config:
+      active: true
+      affiliated: false
+      parrot: false
+    name: NINJA
+    source:
+      slot: 1
+      tgid: 64652
