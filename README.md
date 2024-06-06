@@ -1,12 +1,18 @@
 # UtahDRN dvmhost Installation
 
-### Base System Changes
+### Base System Update
 ```
-sudo rpi-update
 apt update
 apt upgrade
 
 apt install vim wget curl make cmake build-essential libasio-dev libncurses-dev libssl-dev
+reboot
+```
+
+### Pi Firmware Update
+```
+sudo rpi-update
+sudo reboot
 ```
 
 ### Build and Install dvmhost
