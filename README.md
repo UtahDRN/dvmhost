@@ -71,6 +71,16 @@ systemctl start dvmhost-cc
 systemctl start dvmhost-vc
 ```
 
+### Extras
+```
+cat > /etc/profile.d/utahdrn_alias.sh <<EOL
+alias be="sudo su"
+alias taillog="tail -f /var/log/dvmhost/*"
+alias startall="sudo systemctl start dvmhost-cc dvmhost-vc"
+alias stopall="sudo systemctl stop dvmhost-cc dvmhost-vc"
+alias statusall="sudo systemctl status dvmhost-cc dvmhost-vc"
+EOL
+```
 ## Useful Links
 https://github.com/DVMProject/iden-channel-calculator
 
