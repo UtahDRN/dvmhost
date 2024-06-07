@@ -9,12 +9,6 @@ apt install vim wget curl git make cmake build-essential libasio-dev libncurses-
 reboot
 ```
 
-### Pi Firmware Update
-```
-rpi-update
-reboot
-```
-
 ### Build and Install dvmhost
 ```
 wget https://github.com/DVMProject/dvmhost/archive/refs/heads/master.zip -O /tmp/dvmhost.zip
