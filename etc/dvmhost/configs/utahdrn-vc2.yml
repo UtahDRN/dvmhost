@@ -151,9 +151,9 @@ system:
     channelId: 4
     channelNo: C70
     controlCh:
-      restAddress: null
-      restPort: 0
-      restPassword: PASSWORD
+      restAddress: 127.0.0.1
+      restPort: 9990
+      restPassword: butVRmGsyVaSVns11JpSvLbP0OXJ7mBk
       notifyEnable: true
     voiceChNo:
       - channelId: 4
