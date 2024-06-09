@@ -60,6 +60,7 @@ stm32flash -v -w dvm-firmware-hs_f1.bin -i 20,-21,21,-20 -R /dev/ttyAMA0
 ### Download Configs
 ```
 curl -o /etc/dvmhost/configs/iden_table.dat https://raw.githubusercontent.com/UtahDRN/dvmhost/main/etc/dvmhost/configs/iden_table.dat
+curl -o /etc/dvmhost/configs/rid_acl.dat https://raw.githubusercontent.com/UtahDRN/dvmhost/main/etc/dvmhost/configs/rid_acl.dat
 curl -o /etc/dvmhost/configs/talkgroup_rules.yml https://raw.githubusercontent.com/UtahDRN/dvmhost/main/etc/dvmhost/configs/talkgroup_rules.yml
 curl -o /etc/dvmhost/configs/utahdrn-cc1.yml https://raw.githubusercontent.com/UtahDRN/dvmhost/main/etc/dvmhost/configs/utahdrn-cc1.yml
 curl -o /etc/dvmhost/configs/utahdrn-vc1.yml https://raw.githubusercontent.com/UtahDRN/dvmhost/main/etc/dvmhost/configs/utahdrn-vc1.yml
