@@ -5,7 +5,7 @@
 apt update
 apt upgrade
 
-apt install vim wget curl git make cmake build-essential libasio-dev libncurses-dev libssl-dev
+apt install vim wget curl pwgen git make cmake build-essential libasio-dev libncurses-dev libssl-dev
 reboot
 ```
 
@@ -66,6 +66,11 @@ curl -o /etc/dvmhost/configs/rid_acl.dat https://raw.githubusercontent.com/UtahD
 curl -o /etc/dvmhost/configs/talkgroup_rules.yml https://raw.githubusercontent.com/UtahDRN/dvmhost/main/etc/dvmhost/configs/talkgroup_rules.yml
 curl -o /etc/dvmhost/configs/utahdrn-cc1.yml https://raw.githubusercontent.com/UtahDRN/dvmhost/main/etc/dvmhost/configs/utahdrn-cc1.yml
 curl -o /etc/dvmhost/configs/utahdrn-vc1.yml https://raw.githubusercontent.com/UtahDRN/dvmhost/main/etc/dvmhost/configs/utahdrn-vc1.yml
+```
+
+### Edit Config with New Passwords
+```
+pwgen 30 1
 ```
 
 ### Start Service
