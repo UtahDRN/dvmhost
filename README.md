@@ -21,6 +21,8 @@ make
 mkdir -p /etc/dvmhost/configs /var/log/dvmhost
 
 cp /opt/dvmhost-master/build/dvmhost /etc/dvmhost/
+cp /opt/dvmhost-master/build/dvmmon /etc/dvmhost/
+cp /opt/dvmhost-master/build/dvmcmd /etc/dvmhost/
 ```
 
 ### Create Service
@@ -80,6 +82,7 @@ alias taillog="tail -f /var/log/dvmhost/*"
 alias startall="sudo systemctl start dvmhost-cc dvmhost-vc"
 alias stopall="sudo systemctl stop dvmhost-cc dvmhost-vc"
 alias statusall="sudo systemctl status dvmhost-cc dvmhost-vc"
+alias dvmmon="sudo /etc/dvmhost/dvmmon -c /etc/dvmhost/configs/monitor.yml"
 EOL
 ```
 ## Useful Links
