@@ -13,16 +13,17 @@ reboot
 ```
 wget https://github.com/DVMProject/dvmhost/archive/refs/heads/3.6-maint.zip -O /tmp/dvmhost.zip
 unzip /tmp/dvmhost.zip -d /opt/
-mkdir -p /opt/dvmhost-master/build
-cd /opt/dvmhost-master/build
+mv /opt/dvmhost-3.6-maint /opt/dvmhost-github
+mkdir -p /opt/dvmhost-github/build
+cd /opt/dvmhost-github/build
 cmake ..
 make
 
 mkdir -p /etc/dvmhost/configs /var/log/dvmhost
 
-cp /opt/dvmhost-master/build/dvmhost /etc/dvmhost/
-cp /opt/dvmhost-master/build/dvmmon /etc/dvmhost/
-cp /opt/dvmhost-master/build/dvmcmd /etc/dvmhost/
+cp /opt/dvmhost-github/build/dvmhost /etc/dvmhost/
+cp /opt/dvmhost-github/build/dvmmon /etc/dvmhost/
+cp /opt/dvmhost-github/build/dvmcmd /etc/dvmhost/
 ```
 
 ### Create Service
@@ -37,7 +38,7 @@ systemctl enable dvmhost-vc
 
 ### Cleanup
 ```
-rm -rf cd /opt/dvmhost-master/build
+rm -rf cd /opt/dvmhost-github/build
 ```
 
 ### Update Firmware
