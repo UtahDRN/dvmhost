@@ -9,6 +9,7 @@ apt install vim wget curl pwgen snapd git make cmake build-essential libasio-dev
 reboot
 snap install core
 snap install yq
+cp /snap/bin/yq /usr/local/bin/
 ```
 
 ### Build and Install dvmhost
