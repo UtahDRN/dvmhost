@@ -5,8 +5,10 @@
 apt update
 apt upgrade
 
-apt install vim wget curl pwgen yq git make cmake build-essential libasio-dev libncurses-dev libssl-dev
+apt install vim wget curl pwgen snapd git make cmake build-essential libasio-dev libncurses-dev libssl-dev
 reboot
+snap install core
+snap install yq
 ```
 
 ### Build and Install dvmhost
