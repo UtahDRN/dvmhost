@@ -11,7 +11,7 @@ reboot
 
 ### Build and Install dvmhost
 ```
-wget https://github.com/DVMProject/dvmhost/archive/refs/heads/master.zip -O /tmp/dvmhost.zip
+wget https://github.com/DVMProject/dvmhost/archive/refs/heads/3.6-maint.zip -O /tmp/dvmhost.zip
 unzip /tmp/dvmhost.zip -d /opt/
 mkdir -p /opt/dvmhost-master/build
 cd /opt/dvmhost-master/build
