@@ -5,11 +5,9 @@
 apt update
 apt upgrade
 
-apt install vim wget curl pwgen snapd git make cmake build-essential libasio-dev libncurses-dev libssl-dev
+apt install vim wget curl pwgen git make cmake build-essential libasio-dev libncurses-dev libssl-dev
 reboot
-snap install core
-snap install yq
-cp /snap/bin/yq /usr/local/bin/
+wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O /usr/bin/yq && chmod +x /usr/bin/yq
 ```
 
 ### Build and Install dvmhost
