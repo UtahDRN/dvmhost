@@ -13,6 +13,19 @@ cp /snap/bin/yq /usr/local/bin/
 ```
 
 ### Build and Install dvmhost
+
+2025-02-15
+```
+cd /opt
+git clone https://github.com/DVMProject/dvmhost.git
+cd dvmhost
+git checkout fd47396e9eec40b03259d00cfe5f47499a362d61
+mkdir -p /opt/dvmhost/build
+cd /opt/dvmhost/build
+cmake ..
+make
+```
+
 ```
 wget https://github.com/DVMProject/dvmhost/archive/refs/heads/3.6-maint.zip -O /tmp/dvmhost.zip
 unzip /tmp/dvmhost.zip -d /opt/
