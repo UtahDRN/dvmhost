@@ -50,9 +50,9 @@ systemctl enable dvmhost-cc
 systemctl enable dvmhost-vc
 ```
 
-### Creaat FNE Service
+### Create FNE Service
 ```
-curl -o /lib/systemd/system/dvmhost-cc.service https://raw.githubusercontent.com/UtahDRN/dvmhost/main/lib/systemd/system/dvmhost-fne.service
+curl -o /lib/systemd/system/dvmhost-fne.service https://raw.githubusercontent.com/UtahDRN/dvmhost/main/lib/systemd/system/dvmhost-fne.service
 systemctl daemon-reload
 systemctl enable dvmhost-fne
 ```
