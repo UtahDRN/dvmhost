@@ -22,6 +22,12 @@ mkdir -p /opt/dvmhost/build
 cd /opt/dvmhost/build
 cmake ..
 make
+
+mkdir -p /etc/dvmhost/configs /var/log/dvmhost
+
+cp /opt/dvmhost/build/dvmhost /etc/dvmhost/
+cp /opt/dvmhost/build/dvmmon /etc/dvmhost/
+cp /opt/dvmhost/build/dvmcmd /etc/dvmhost/
 ```
 
 ```
