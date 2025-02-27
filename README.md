@@ -62,6 +62,15 @@ systemctl enable dvmhost-fne
 rm -rf cd /opt/dvmhost-github/build
 ```
 
+### Build Firmware on Pi
+```
+apt install gcc-arm-none-eabi
+cd /opt
+git clone --recurse-submodules https://github.com/DVMProject/dvmfirmware-hs.git
+cd /opt/dvmfirmware-hs
+make
+```
+
 ### Update Firmware
 From USB
 ```
