@@ -8,6 +8,8 @@ apt upgrade
 apt install vim wget curl pwgen git make cmake build-essential libasio-dev libncurses-dev libssl-dev
 reboot
 wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O /usr/bin/yq && chmod +x /usr/bin/yq
+
+wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_arm -O /usr/bin/yq && chmod +x /usr/bin/yq
 ```
 
 ### Build and Install dvmhost
