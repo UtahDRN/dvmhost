@@ -82,6 +82,7 @@ make -f Makefile.STM32FX mmdvm-hs-hat-dual
 ### Update Firmware
 From USB
 ```
+apt install stm32flash
 stm32flash -v -w dvm-firmware-hs_f1.bin -g 0x0 -R /dev/ttyUSB0
 ``` 
 
