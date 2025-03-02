@@ -76,7 +76,7 @@ apt install gcc-arm-none-eabi
 cd /opt
 git clone --recurse-submodules https://github.com/DVMProject/dvmfirmware-hs.git
 cd /opt/dvmfirmware-hs
-make
+make -f Makefile.STM32FX mmdvm-hs-hat-dual
 ```
 
 ### Update Firmware
