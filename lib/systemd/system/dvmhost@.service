@@ -1,0 +1,13 @@
+[Unit]
+Description=dvmhost service
+After=syslog.target network.target
+
+[Service]
+User=root
+Type=forking
+ExecStart=/etc/dvmhost/dvmhost -c /etc/dvmhost/configs/utahdrn-%i.yml
+Restart=on-abnormal
+Environment=INSTANCE_NAME=%i
+
+[Install]
+WantedBy=multi-user.target
