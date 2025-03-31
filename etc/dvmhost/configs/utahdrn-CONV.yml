@@ -144,8 +144,8 @@ system:
   config:
     authoritative: true
     supervisor: true
-    channelId: 5
-    channelNo: 0
+    channelId: 4
+    channelNo: C08
     controlCh:
       restAddress:
       restPort: 0
@@ -153,7 +153,13 @@ system:
       restSsl: false
       notifyEnable: false
       presence: 120
-    voiceChNo: []
+    voiceChNo:
+      - channelId: 4
+        channelNo: C08
+        restAddress:
+        restPort: 0
+        restPassword:
+        restSsl: false
     secure:
       key: 000102030405060708090A0B0C0D0E0F
     colorCode: 1
